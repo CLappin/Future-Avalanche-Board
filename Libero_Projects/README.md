@@ -9,7 +9,7 @@ This folder contains Tcl scripts that build Libero SoC (**v12.3**) design projec
     2. Execute the script, Project -> Execute Script
     3. Select the directory that the script is located in using the "..."
     4. Select the script and select "Open"
-    5. In the arguments text box, enter "AHB"
+    5. In the arguments text box, enter "DES1"
     6. Select the "Run" button to execute the script
     7. Once complete, a script report will be generated.
 
@@ -20,22 +20,23 @@ Libero executes the script and opens the Mi-V sample project. The script adds Ti
     2. Execute the script, Project -> Execute Script
     3. Select the directory that the script is located in, using the "..."
     4. Select the script and select "Open"
-    5. In the arguments text box, enter "AHB SYNTHESIZE"
+    5. In the arguments text box, enter "DES1 SYNTHESIZE"
     6. Select the "Run" button to execute the script
     7. Once complete, a script report will be generated.
 
-In this example, the arguments "AHB SYNTHESIZE" are entered to take the project through to Synthesis.
+In this example, the arguments "DES1 SYNTHESIZE" are entered to take the project through to Synthesis.
 
 Libero executes the script and opens the Mi-V sample project. The script adds Timing constraints to the project for Synthesis, Place and Route, and Timing Verification. Additionally, IO Constraints are added to the project for Place and Route. The project can now be taken through the remainder of the Libero SoC design flow.
 
 ## <a name="Script arguments"></a> Script Arguments
-In the examples above the arguments "AHB" and "AHB SYNTHESIZE" were entered. The complete set of script arguments are documented here.
+In the examples above the arguments "DES1" and "DES1 SYNTHESIZE" were entered. The complete set of script arguments are documented here.
 
 First argument:
 | Argument    |  Description   |
 | ------------- |:-------------:|
-| AHB      | Generate a sample design with the MiV_RV32IMA_L1_AHB |
-| AXI      | Generate a sample design with the MiV_RV32IMA_L1_AXI |
+| DES1      | Generates a sample design with the MiV_RV32IMA_L1_AHB soft RISC-V processor |
+| DES2      | Generates a sample design with the MiV_RV32IMA_L1_AXI soft RISC-V processor |
+| DES3      | Generates a sample design with the MiV_RV32IMC soft RISC-V processor |
 
 Second argument:
 | Argument    |  Description   |
@@ -47,7 +48,7 @@ Second argument:
 
 ## Design Features
 The Libero designs include the following features:
-* A MIV_RV32IMA_L1_AHB or MIV_RV32IMA_L1_AXI soft RISC-V processor.
+* A MIV_RV32IMC, MIV_RV32IMA_L1_AHB or MIV_RV32IMA_L1_AXI soft RISC-V processor.
 * RISC-V debug block allowing on-target debug using SoftConsole.
 * The operating frequency of the design is 50MHz.
 * Target memory is LSRAM.
