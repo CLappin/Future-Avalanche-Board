@@ -1,6 +1,6 @@
 ## Future Avalanche Board Mi-V Sample Designs
 
-This repository contains Libero projects for the Mi-V soft core processors family.
+This repository contains Libero projects for the Mi-V soft core processor family.
 FlashPro Express projects containing pre-generated programming files are also available for each of the designs.
 
 To download or clone the repository:
